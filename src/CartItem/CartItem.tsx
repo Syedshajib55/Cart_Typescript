@@ -13,7 +13,7 @@ type Props = {
 const CartItem: React.FC<Props> = ({ item, addToCart, removeFromCart }) => (
   <Wrapper>
     <div>
-      <h3>{item.title}</h3>
+      <h2>{item.title}</h2>
       <div className='information'>
         <p>Price: ${item.price}</p>
         <p>Total: ${(item.amount * item.price).toFixed(2)}</p>
